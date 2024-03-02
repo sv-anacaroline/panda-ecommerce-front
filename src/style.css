@@ -7,6 +7,11 @@ html, body, div, main {
   box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,p,span,div,small,a,input,label,textarea {
+  font-family: var(--font-family);
+  font-weight: var(--wheight);
+}
+
 .page {
   width: auto;
   height: auto;         
@@ -16,41 +21,50 @@ html, body, div, main {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 1100px;
-  padding: 0 68px;
+  width: 68,75rem;
+  padding: 0 4,25rem;
 }
 
 
 /* BREADCRUMB */
 .navbar {
-    background-color: rgb(187, 255, 0);
-    width: auto;
-    height: 70px;
+    width: 100%;
+    height: 1.25rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
+    margin-left: 6.25rem;
 }
 
 .breadcrumb {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     color: var(--primary);
-    width: auto;
-    height: 20px;
 }
  
 .breadcrumb-item {
     display: flex;
     justify-content: center;
-    color: black;
+    color: var(--color-black);
     cursor: pointer;
     text-decoration: none;
-    text-decoration-color: black
+    text-decoration-color:  var(--color-black);
+    padding: 0 var(--pad);
+    font-size: var(--size);
+    
 }
 
-.breadcrumb-item__active {
-    color: red;
+.breadcrumb-item.__active {
+    color: var(--primary);
+    font-weight: var(--wheight-bold);
 }
 
-.breadcrumb-icon {
- 
+.breadcrumb svg {
+  width: var(--size);
+  height: var(--size);
+  top: 0.2rem;
+  left: 3.125rem;
+  fill:  var(--color-black);
+  
 }
 
 /* PRODUCT DETAILS */
@@ -75,6 +89,10 @@ html, body, div, main {
 
 .thumb {
     padding: 0px 15px 10px 10px;
+}
+
+.thumb.__active {
+  border: 2px solid red;
 }
 
 .prod-item {

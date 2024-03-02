@@ -1,25 +1,22 @@
 @media screen and (max-width: 37.5em) {
   
   .container {
-    background: black;
-    width: 350px;
-    padding: 0 5px;
+    width: 100%;
+    padding: 0 var(--pad-sm);
   }
 
 
   /* BREAD CRUMB */
   .navbar {
+    height: 1.25rem;
+    margin-left: 0;
+    padding-bottom: 0.625rem;
   }
 
-  .breadcrumb {
-  }
-
-  .breadcrumb-item {}
-
-  .breadcrumb-item__active {
-  }
-
-  .breadcrumb-icon {
+  .breadcrumb-item {
+    justify-content: space-between;
+    padding: 0 var(--pad-sm);
+    font-size: var(--size-sm);
   }
   
 }

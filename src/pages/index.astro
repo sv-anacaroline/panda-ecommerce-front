@@ -4,27 +4,31 @@ import { Image } from "astro:assets";
 import img1 from "../assets/img/img_01.jpeg";
 import img2 from "../assets/img/img_02.jpeg";
 import img3 from "../assets/img/img_03.jpeg";
-import img4 from "../assets/img/img_04.jpeg";
-import img5 from "../assets/img/img_05.jpeg";
-import img6 from "../assets/img/img_06.jpeg";
-import img7 from "../assets/img/img_07.jpeg";
-import down from "../assets/icone/down.svg";
-import up from "../assets/icone/up.svg";
-import right from "../assets/icone/right.svg";
 import Layout from "../layouts/Layout.astro";
+import Right from "../components/icone/right.astro";
+import Left from '../components/icone/left.astro';
 ---
 
 <Layout title="Teste Panda">
   <div class="container">
     <nav class="navbar">
       <div class="breadcrumb">
-        <a class="breadcrumb-item" href="”#”">Inicio</a>
+        <a class="breadcrumb-item" href="”#”">Início</a>
+        <svg class="breadcrumb-icon">
+          <Right />
+        </svg>
   
         <a class="breadcrumb-item" href="”#”">Feminino</a>
+        <svg class="breadcrumb-icon">
+          <Right />  
+        </svg>
   
         <a class="breadcrumb-item" href="”#”">Vestidos</a>
+        <svg class="breadcrumb-icon">
+          <Right />  
+        </svg>
   
-        <a class="breadcrumb-item" href="”#”">Ver Detalhes</a>
+        <a class="breadcrumb-item __active" href="”#”">Ver Detalhes</a>
       </div>
     </nav>
   </div>
@@ -48,7 +52,7 @@ import Layout from "../layouts/Layout.astro";
               height="256"
             />
             <Image
-              class="thumb"
+              class="thumb __active"
               src={img3}
               alt="produto"
               width="170.03"

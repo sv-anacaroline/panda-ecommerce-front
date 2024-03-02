@@ -12,8 +12,10 @@
   --h2: 1.5rem;
   --h3: 1.25rem;
   --size: 1rem;
-  --size-small: .75rem;
+  --size-sm: .75rem;
 
+  --wheight: 400;
+  --wheight-bold: 500;
 
   --pad: .5rem;
   --pad-sm: calc(var(--pad)/2);
