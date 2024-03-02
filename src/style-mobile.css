@@ -1,0 +1,25 @@
+@media screen and (max-width: 37.5em) {
+  
+  .container {
+    background: black;
+    width: 350px;
+    padding: 0 5px;
+  }
+
+
+  /* BREAD CRUMB */
+  .navbar {
+  }
+
+  .breadcrumb {
+  }
+
+  .breadcrumb-item {}
+
+  .breadcrumb-item__active {
+  }
+
+  .breadcrumb-icon {
+  }
+  
+}

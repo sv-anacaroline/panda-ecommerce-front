@@ -1,8 +1,175 @@
-<main class="pagina"> MInha pagina </main>
-<style>
-	@import url('../style.css');
-</style>
+---
+import { Image } from "astro:assets";
 
-<script>
-	import "../utils"
-</script>
+import img1 from "../assets/img/img_01.jpeg";
+import img2 from "../assets/img/img_02.jpeg";
+import img3 from "../assets/img/img_03.jpeg";
+import img4 from "../assets/img/img_04.jpeg";
+import img5 from "../assets/img/img_05.jpeg";
+import img6 from "../assets/img/img_06.jpeg";
+import img7 from "../assets/img/img_07.jpeg";
+import down from "../assets/icone/down.svg";
+import up from "../assets/icone/up.svg";
+import right from "../assets/icone/right.svg";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Teste Panda">
+  <div class="container">
+    <nav class="navbar">
+      <div class="breadcrumb">
+        <a class="breadcrumb-item" href="”#”">Inicio</a>
+  
+        <a class="breadcrumb-item" href="”#”">Feminino</a>
+  
+        <a class="breadcrumb-item" href="”#”">Vestidos</a>
+  
+        <a class="breadcrumb-item" href="”#”">Ver Detalhes</a>
+      </div>
+    </nav>
+  </div>
+  <main class="page">
+    <div class="container">
+      <div class="product-details">
+        <div class="product-images">
+          <div class="thumbs">
+            <Image
+              class="thumb"
+              src={img1}
+              alt="produto"
+              width="170.03"
+              height="256"
+            />
+            <Image
+              class="thumb"
+              src={img2}
+              alt="produto"
+              width="170.03"
+              height="256"
+            />
+            <Image
+              class="thumb"
+              src={img3}
+              alt="produto"
+              width="170.03"
+              height="256"
+            />
+          </div>
+          <div class="prod-item">
+            <Image src={img1} alt="produto" width="449" height="676.02" />
+          </div>
+        </div>
+  
+        <div class="product-info">
+          <h1>Vestido Intense Manga Longa</h1>
+          <p>Ref: 0000000</p>
+          <a>Ver avaliaçoes</a>
+          <div>
+            <p>Selecione a cor</p>
+            <ul>
+              <li><a href="”#”">azul</a></li>
+              <li><a href="”#”">marrom</a></li>
+              <li><a href="”#”">Roxo</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Selecione o tamanho</p>
+            <ul>
+              <li><a href="”#”">P</a></li>
+              <li><a href="”#”">M</a></li>
+              <li><a href="”#”">G</a></li>
+            </ul>
+            <a>Ver tabela de tamanhos</a>
+            <p>Últimos 2 produtos em estoque. Não perca esta chance!</p>
+          </div>
+          <div>
+            <span>10% off</span>
+            <p>R$ 97,20</p>
+            <p>Valor com desconto</p>
+            <p>Parcelados em até 4x sem juros no cartão</p>
+            <button> Adicionar ao carrinho</button>
+          </div>
+  
+          <div>
+            <label>Calcule o prazo e o valor da entrega</label>
+            <input type="text" placeholder="00000-000" />
+            <button> Calcular</button>
+          </div>
+          <div>
+            <p>Formas de Pagamento</p>
+            <ul>
+              <li><a href="”#”">Pix</a></li>
+              <li><a href="”#”">Boleto</a></li>
+              <li><a href="”#”">Cartao de credito</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Trocas e devolucao</p>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+              nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+              consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+              velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+              Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="infoAdicional">
+      <div class="descricao">
+        <h2>Descricao do produto</h2>
+        <p>
+          O nosso modelo de vestido Intense com certeza é a tendência do
+          momento! Com um corte justo no corpo, ele realça suas curvas de forma
+          leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+          incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+          conforto excepcional. O design sem estampa adiciona um toque
+          minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+          Seja para um encontro descontraído ou uma tarde entre amigos, este
+          vestido é a escolha certa para um estilo sensual e sofisticado ao
+          mesmo tempo.
+        </p>
+      </div>
+      <div class="caracteristica">
+        <h2>Caracteristicas do Produto</h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+          nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+          consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+          velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc
+          mi ipsum faucibus vitae aliquet nec ullamcorper sit amet."
+        </p>
+      </div>
+    </div>
+    <div>
+      <p>Produtos que você também pode gostar</p>
+      <div>
+        <Image src={img4} alt="produto" width="263" height="340" />
+        <span>Novo!</span>
+        <p>Blazer Off white</p>
+        <p>R$ 140,70</p>
+        <div>
+          <Image src={img5} alt="produto" width="263" height="340" />
+          <span>Novo!</span>
+          <p>Jaqueta Couro Sintetico</p>
+          <p>R$ 140,70</p>
+        </div>
+        <div>
+          <Image src={img6} alt="produto" width="263" height="340" />
+          <span>25% off</span>
+          <p>Calça Wide Leg Destroyed</p>
+          <p>R$ 140,70</p>
+        </div>
+        <div>
+          <Image src={img7} alt="produto" width="263" height="340" />
+          <span>Novo!</span>
+          <p>Camisa Jeans com Bolsos</p>
+          <p>R$ 140,70</p>
+        </div>
+      </div>
+    </div> -->
+  </main>
+</Layout>

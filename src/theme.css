@@ -1,0 +1,21 @@
+
+:root {
+  --primary: #7A306C;
+  --secondary: #FFEAFB;
+  --ternary: #DBFE87;
+  --alert: #E30E41;
+  --color-black: #0C1B33;
+  --color-grey: #9C9C9C;
+
+  --font-family: "IBM Plex Sans", sans-serif;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --size: 1rem;
+  --size-small: .75rem;
+
+
+  --pad: .5rem;
+  --pad-sm: calc(var(--pad)/2);
+  --pad-lg: .625rem;
+}
