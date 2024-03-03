@@ -51,7 +51,7 @@
   .thumb-btn {
     width: 6.8125rem;
     height: 10.1875rem;
-    margin-top: 0px;
+    margin-top: 0rem;
   }
 
   .thumbs .thumb-btn:last-child {
@@ -67,4 +67,53 @@
   .prod-item-btn {
     display: none;
   }
+
+  /* PRODUCT INFO */
+  .product-info {
+    margin-left: 0rem;
+    width: 100%;
+    margin-top: calc(var(--pad-lg)*3);
+  }
+
+
+  /* PROD DETAILS */
+  .prod-detail-mob,
+  .prod-trent-mob {
+    display: block;
+  }
+
+  .prod-info-desk {
+    display: none;
+  }
+
+  .info-transfer-mob {
+    width: 100%;
+    height: 2.8125rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+   }
+   
+   .transfer svg{
+    width: 40px;
+    height: 30px;
+    margin-right: 15px;
+   }
+   
+   .title-transfer{
+    font-weight: var(--wheight-bold);
+    font-size: var(--size);
+    margin: 0;
+    color: var(--color-black);
+   }
+   
+   .subtitle-transfer {
+     font-size: var(--size-sm);
+     margin-top: 0.3125rem;
+     color: var(--color-black);
+   }
+
 }

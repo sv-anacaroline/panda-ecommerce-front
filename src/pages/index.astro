@@ -8,6 +8,11 @@ import Layout from "../layouts/Layout.astro";
 import Right from "../components/icone/right.astro";
 import Left from '../components/icone/left.astro';
 import Heart from '../components/icone/heart.astro';
+import Star from '../components/icone/star.astro';
+import Cart from '../components/icone/shopping-cart.astro'
+import Down from '../components/icone/down.astro'
+import Up from '../components/icone/up.astro'
+import Transfer from '../components/icone/transfer.astro';
 ---
 
 <Layout title="Teste Panda">
@@ -69,90 +74,181 @@ import Heart from '../components/icone/heart.astro';
         </div>
   
         <div class="product-info">
-          <h1>Vestido Intense Manga Longa</h1>
-          <p>Ref: 0000000</p>
-          <a>Ver avaliaçoes</a>
-          <div>
+          <h1 class="title-prod">Vestido Intense Manga Longa</h1>
+          <p class="reference">Ref: 0000000</p>
+          <div class="assessment-box">
+            <div class="star-rate">
+              <Star/>            
+              <Star/>            
+              <Star/>            
+              <Star/>            
+              <Star className="__limit"/>           
+            </div>
+              <a class="assessment">Ver avaliaçoes</a>
+          </div>  
+          <div class="color-box">
             <p>Selecione a cor</p>
-            <ul>
-              <li><a href="”#”">azul</a></li>
-              <li><a href="”#”">marrom</a></li>
-              <li><a href="”#”">Roxo</a></li>
-            </ul>
+            <div class="option-color">
+              <button class="color-btn __color-one"></button>
+              <button class="color-btn __color-two"></button>
+              <button class="color-btn __color-three" ></button>
+            </div>
           </div>
-          <div>
+          <div class="size-box">
             <p>Selecione o tamanho</p>
-            <ul>
-              <li><a href="”#”">P</a></li>
-              <li><a href="”#”">M</a></li>
-              <li><a href="”#”">G</a></li>
-            </ul>
-            <a>Ver tabela de tamanhos</a>
-            <p>Últimos 2 produtos em estoque. Não perca esta chance!</p>
+          <div class="size">
+              <button class="size-btn">PP</button>
+              <button class="size-btn">P</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">G</button>
+              <button class="size-btn">GG</button>
           </div>
-          <div>
-            <span>10% off</span>
-            <p>R$ 97,20</p>
-            <p>Valor com desconto</p>
-            <p>Parcelados em até 4x sem juros no cartão</p>
-            <button> Adicionar ao carrinho</button>
+            <a class="table-size">Ver tabela de tamanhos</a>
           </div>
-  
-          <div>
-            <label>Calcule o prazo e o valor da entrega</label>
-            <input type="text" placeholder="00000-000" />
-            <button> Calcular</button>
+          <div class="stock-notice">
+            <p class="notice">Últimos 2 produtos em estoque. Não perca esta chance!</p>
           </div>
-          <div>
-            <p>Formas de Pagamento</p>
-            <ul>
-              <li><a href="”#”">Pix</a></li>
-              <li><a href="”#”">Boleto</a></li>
-              <li><a href="”#”">Cartao de credito</a></li>
-            </ul>
+          <div class="info-value">
+            <div class="discount">
+              <span class="percent-discount">10% off</span>
+            </div>
+            <div class="value">
+              <span class="off-discount">R$ 97,20</span>
+              <span class="on-discount">R$ 87,48</span>
+            </div>
+            <span class="info-pay">Parcelados em até 4x sem juros no cartão</span>
           </div>
-          <div>
-            <p>Trocas e devolucao</p>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-              nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
-              consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
-              velit dignissim sodales ut eu sem. Et tortor consequat id porta.
-              Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet."
-            </p>
+          <div class="cart">
+            <button class="cart-btn">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+          </div>
+          <div class="calculator-shipping">
+            <span class="calculator-label">Calcule o prazo e o valor da entrega</span>
+            <div class="calculator">
+              <input class= "calculator-input" type="text" placeholder="00000-000" />
+              <button class="calculator-btn">Calcular</button>
+            </div>
+          </div>
+          <div class="prod-detail-mob">
+            <div class="title-detail">
+              <span class="title">Detalhes do Produto</span>
+              <button class="btn-detail"><Down /></button>
+            </div>
+            <div class="title-detail-content">
+              <p class="text-info">
+                O nosso modelo de vestido Intense com certeza é a tendência do
+                momento! Com um corte justo no corpo, ele realça suas curvas de forma
+                leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+                incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+                conforto excepcional. O design sem estampa adiciona um toque
+                minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+                Seja para um encontro descontraído ou uma tarde entre amigos, este
+                vestido é a escolha certa para um estilo sensual e sofisticado ao
+                mesmo tempo.
+              </p>
+            </div>
+          </div>
+          <div class="prod-trent-mob">
+            <div class="title-detail">
+              <span class="title">Caracteristicas do Produto</span>
+              <button class="btn-detail"><Down /></button>
+            </div>
+            <div class="title-detail-content">
+              <p class="text-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+              </p>
+            </div>
+          </div>
+          <div class="payment">
+            <div class="title-detail">
+              <span class="title">Formas de Pagamento</span>
+              <button class="btn-detail"><Down /></button>
+            </div>
+            <div class="title-detail-content">
+              <ul class="pay-list">
+                <li>Pix</li>
+                <li>Boleto</li>
+                <li>Cartao de Credito</li>
+              </ul>
+            </div>
+          </div>
+          <div class="return">
+            <div class="title-detail">
+              <span class="title">Trocas e Devolucao</span>
+              <button class="btn-detail"><Down /></button>
+            </div>
+            <div class="title-detail-content">
+              <p class="text-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- <div class="infoAdicional">
-      <div class="descricao">
-        <h2>Descricao do produto</h2>
-        <p>
-          O nosso modelo de vestido Intense com certeza é a tendência do
-          momento! Com um corte justo no corpo, ele realça suas curvas de forma
-          leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
-          incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
-          conforto excepcional. O design sem estampa adiciona um toque
-          minimalista e versátil ao seu look, perfeito para ocasiões casuais.
-          Seja para um encontro descontraído ou uma tarde entre amigos, este
-          vestido é a escolha certa para um estilo sensual e sofisticado ao
-          mesmo tempo.
-        </p>
+      <div class="prod-info-desk">
+        <div class="prod-info-head">
+          <a class="prod-info-link" id="prod-nav-details"><h2>Descricao do produto</h2></a>
+          <a class="prod-info-link" id="prod-nav-trent"><h2>Caracteristicas do Produto</h2></a>
+        </div>
+        <div class="body">
+          <div id="prod-content-details" class="prod-info-desk-content">
+            <p>
+              O nosso modelo de vestido Intense com certeza é a tendência do
+              momento! Com um corte justo no corpo, ele realça suas curvas de forma
+              leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+              incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+              conforto excepcional. O design sem estampa adiciona um toque
+              minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+              Seja para um encontro descontraído ou uma tarde entre amigos, este
+              vestido é a escolha certa para um estilo sensual e sofisticado ao
+              mesmo tempo.
+            </p>
+          </div>
+          <div id="prod-content-trent" class="prod-info-desk-content __inactive">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+              nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+              consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+              velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc
+              mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+            </p>
+          </div>
+          
+      </div >
+    
       </div>
-      <div class="caracteristica">
-        <h2>Caracteristicas do Produto</h2>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-          nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
-          consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
-          velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc
-          mi ipsum faucibus vitae aliquet nec ullamcorper sit amet."
-        </p>
+      
+      <div class="info-transfer-mob">
+        <div class="transfer">
+          <Transfer />
+        </div>
+        <div class="info-transfer">
+          <p class="title-transfer">
+            Entrega Rápida
+          </p>
+          <p class="subtitle-transfer">
+            Enviamos para todo Brasil
+          </p>
+        </div>
       </div>
     </div>
-    <div>
+
+    <!-- <div>
       <p>Produtos que você também pode gostar</p>
       <div>
         <Image src={img4} alt="produto" width="263" height="340" />
