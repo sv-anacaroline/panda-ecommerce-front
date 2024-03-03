@@ -7,6 +7,7 @@ import img3 from "../assets/img/img_03.jpeg";
 import Layout from "../layouts/Layout.astro";
 import Right from "../components/icone/right.astro";
 import Left from '../components/icone/left.astro';
+import Heart from '../components/icone/heart.astro';
 ---
 
 <Layout title="Teste Panda">
@@ -37,30 +38,33 @@ import Left from '../components/icone/left.astro';
       <div class="product-details">
         <div class="product-images">
           <div class="thumbs">
-            <Image
-              class="thumb"
-              src={img1}
-              alt="produto"
-              width="170.03"
-              height="256"
-            />
-            <Image
-              class="thumb"
-              src={img2}
-              alt="produto"
-              width="170.03"
-              height="256"
-            />
-            <Image
-              class="thumb __active"
-              src={img3}
-              alt="produto"
-              width="170.03"
-              height="256"
-            />
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb __active"
+                src={img1}
+                alt="produto"
+              />
+            </button>
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb"
+                src={img2}
+                alt="produto"
+              />
+            </button>
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb"
+                src={img3}
+                alt="produto"
+              />
+            </button>
           </div>
           <div class="prod-item">
-            <Image src={img1} alt="produto" width="449" height="676.02" />
+            <button class="prod-item-btn __reset">
+              <Heart />
+            </button>
+            <Image class="prod-item-img" src={img1} alt="produto" />
           </div>
         </div>
   
