@@ -269,9 +269,9 @@ outline: 3px solid var(--primary);
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  width: 59px;
-  height: 18px;
-  border-radius: 5px;
+  width: 3.6875rem;
+  height: 1.125rem;
+  border-radius: calc(var(--pad-sm)/2);
 }
  
 .percent-discount {
@@ -284,13 +284,13 @@ display: flex;
 flex-direction: row;
 align-items: center;
 width: 16.4375rem;
-height: 42px;
-margin-top: 10px;
-margin-bottom: 10px;
+height: 2.625rem;
+margin-top: var(--pad-lg);
+margin-bottom: var(--pad-lg);
 }
 
 .off-discount {
-  margin-right: 20px;
+  margin-right: calc(var(--pad-lg)*2);
   font-size: var(--size);
   text-decoration: line-through;
   color: var(--color-grey);
@@ -307,16 +307,16 @@ margin-bottom: 10px;
 }
 
 .cart{
-  width: 303px;
-  height: 46px;
-  margin-bottom: 20px;
+  width: 18.9375rem;
+  height: 2.875rem;
+  margin-bottom: calc(var(--pad-lg)*2);
 }
 
 .cart-btn{
   width:100%;
   height: 100%;
-  border-radius: 5px;
-  margin-right: 10px;
+  border-radius: calc(var(--pad-lg)/2);
+  margin-right: var(--pad-lg);
   border: none;
   background-color: var(--primary);
   cursor: pointer;
@@ -325,22 +325,22 @@ margin-bottom: 10px;
 }
 
 .cart svg {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   line-height: 0;
   margin-bottom: -2px;
 }
 
 .calculator-shipping {
-width: 198px;
-height: 55px;
+width: 12.375rem;
+height: 3.4375rem;
 color: var(--color-black);
 }
 
 .calculator{
   display: flex;
   flex-direction: row;
-  width: 31px;
+  width: 1.9375rem;
   margin-top: var(--pad);
 }
 
@@ -349,23 +349,23 @@ font-size: var(--size-sm);
 }
 
 .calculator-input{
- width: 106px;
- height: 31px;
- margin-right: 10px;
+ width: 6.625rem;
+ height: 1.9375rem;
+ margin-right: var(--pad-lg);
  text-align: center;
  box-sizing: border-box;
  font-size: var(--size-sm);
  color: var(--color-grey);
  border: 1px solid var(--color-black);
- border-radius: 5px;
+ border-radius: calc(var(--pad-lg)/2);
  padding: 0 calc(var(--pad)*2);
 }
 
 .calculator-btn {
- width: 86px;
- height: 31px;
+ width: 5.375rem;
+ height: 1.9375rem;
  border: 1px solid var(--color-black);
- border-radius: 5px;
+ border-radius: calc(var(--pad-lg)/2);
  font-size: var(--size-sm);
  color: var(--color-black);
  background-color: white;
@@ -375,15 +375,15 @@ font-size: var(--size-sm);
 }
 
 .payment{
-  margin-top: 20px;
+  margin-top: calc(var(--pad-lg)*2);
 }
 
 .title-detail {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
-  padding-bottom: 5px;
-  padding-right: 5px;
+  margin-top: var(--pad-lg);
+  padding-bottom: calc(var(--pad-lg)/2);
+  padding-right: calc(var(--pad-lg)/2);
   border-bottom: 0.03125rem solid var(--color-grey);
 }
 
@@ -393,16 +393,16 @@ font-size: var(--size-sm);
 }
 
 .btn-detail {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   border: none;
   background-color: white;
   cursor: pointer;
 }
 
 .btn-detail svg {
-width: 20px;
-height: 20px;
+width: 1.25rem;
+height: 1.25rem;
 fill: var(--color-black);
 }
 
@@ -411,7 +411,8 @@ fill: var(--color-black);
   flex-direction: column;
   color: var(--color-black);
   font-size: var(--size-sm);
-  margin: 12px 12px 12px 0;
+  margin: var(--pad-lg);
+  margin-left: 0;
 }
 
 .text-info {
