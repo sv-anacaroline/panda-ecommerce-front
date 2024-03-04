@@ -594,17 +594,67 @@ fill: var(--color-black);
   height: 100%;
   left: 0;
   top: 0;
+  display: none;
+}
+
+.modal.__active {
+  display: block;
 }
 
 .modal-background {
   background: rgba(0,0,0,0.4);
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-dialog {
-  width: 200px;
-  height: 160px;
+  width: 17.5rem;
+  height: 8.75rem;
+  background-color: white;
+  border-radius: var(--pad);
+  padding: var(--pad-lg);
+  color: var(--color-grey);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-close {
+  align-self: flex-end;
+  transition: .2s all ease;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  line-height: 0;
+}
+
+.modal-close svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--primary);
+  transition: .2s all ease;
+}
+
+.modal-close:hover {
+  background: var(--color-black);
+  opacity: 0.8;
+}
+
+.modal-close:hover svg {
+  fill: var(--color-grey-ligth);
+}
+
+.modal-dialog p {
+  padding: 0 var(--pad-lg);
+}
+
+.modal-dialog span {
+  color: var(--color-black);
+  font-weight: var(--wheight-bold);
 }
 
 

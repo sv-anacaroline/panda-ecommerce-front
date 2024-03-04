@@ -372,13 +372,17 @@ import Close from '../components/icon/close.astro';
       </div>
     </div>
 
-    <div class="modal">
+    <div class="modal" id="modal">
       <div class="modal-background">
         <div class="modal-dialog">
-          <button class="modal-close" id="modal-btn ">
+          <button class="modal-close __reset" id="modal-btn">
             <Close />
           </button>
-          <p>o custo do calculo do frente do CEP: <span id="modal-cep"></span> é R$ <span id="modal-value"></span> </p>
+          <p>
+            o custo do calculo do frente do CEP:
+            <span>0000-000</span>
+            é R$ <span>32,49</span>
+          </p>
         </div>
       </div>
     </div>
