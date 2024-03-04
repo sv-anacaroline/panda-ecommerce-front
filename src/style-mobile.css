@@ -30,8 +30,6 @@
   /* 
     Product Images
   */
-
-  
   .product-images {
     width: 100%;
     min-width: 100%;
@@ -101,7 +99,7 @@
    .transfer svg{
     width: 2.5rem;
     height: 1.875rem;
-    margin-right: calc(var(--pad-lg)+(var(--pad-lg)/2));
+    margin-right: calc(var(--pad-lg) + var(--pad-lg)/2);
    }
    
    .title-transfer{
@@ -131,8 +129,8 @@
   }
   
   .slides-head h3::after {
-    top: 60px;
-    right: 20px;
+    top: 3.75rem;
+    right: 1.25rem;
   }
 
   .slides-btn-nav {
@@ -155,33 +153,34 @@
   }
 
   .slides-item {
-    width: 216px;
-    height: 420px;
+    width: 13.5rem;
+    height: 26.25rem;
     position: relative;
     overflow: hidden;
     margin: 0 calc(var(--img-gut)/2);
   }
   
   .slides-img {
-    width: 216px;
-    height: 281px;
+    width: 13.5rem;
+    height: 17.5625rem;
   }
 
   .cart-btn.__small {
-    height: 32px;
+    height: 2rem;
+    display: block;
     font-size: var(--size-sm);
     margin-bottom: var(--pad-sm);
   }
 
   .cart-btn.__twin {
     background-color: white;
-    border: 1px solid var(--primary);
+    border: 0.0625rem solid var(--primary);
     color: var(--primary);
   }
 
   .cart-btn.__small svg {
-    width: 13px;
-    height: 13px;
+    width: 0.8125rem;
+    height: 0.8125rem;
   }
 
 }
