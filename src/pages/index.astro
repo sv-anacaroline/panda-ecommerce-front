@@ -1,18 +1,24 @@
 ---
 import { Image } from "astro:assets";
 
-import img1 from "../assets/img/img_01.jpeg";
-import img2 from "../assets/img/img_02.jpeg";
-import img3 from "../assets/img/img_03.jpeg";
+import imgProd1 from "../assets/img/prod/1.jpeg";
+import imgProd2 from "../assets/img/prod/2.jpeg";
+import imgProd3 from "../assets/img/prod/3.jpeg";
+
+import imgSlide1 from "../assets/img/slide/1.jpeg";
+import imgSlide2 from "../assets/img/slide/2.jpeg";
+import imgSlide3 from "../assets/img/slide/3.jpeg";
+import imgSlide4 from "../assets/img/slide/4.jpeg";
+
+
 import Layout from "../layouts/Layout.astro";
 import Right from "../components/icone/right.astro";
-import Left from '../components/icone/left.astro';
 import Heart from '../components/icone/heart.astro';
 import Star from '../components/icone/star.astro';
 import Cart from '../components/icone/shopping-cart.astro'
 import Down from '../components/icone/down.astro'
-import Up from '../components/icone/up.astro'
 import Transfer from '../components/icone/transfer.astro';
+import Left from "../components/icone/left.astro";
 ---
 
 <Layout title="Teste Panda">
@@ -46,21 +52,21 @@ import Transfer from '../components/icone/transfer.astro';
             <button class="thumb-btn __reset">
               <Image
                 class="thumb __active"
-                src={img1}
+                src={imgProd1}
                 alt="produto"
               />
             </button>
             <button class="thumb-btn __reset">
               <Image
                 class="thumb"
-                src={img2}
+                src={imgProd2}
                 alt="produto"
               />
             </button>
             <button class="thumb-btn __reset">
               <Image
                 class="thumb"
-                src={img3}
+                src={imgProd3}
                 alt="produto"
               />
             </button>
@@ -69,7 +75,7 @@ import Transfer from '../components/icone/transfer.astro';
             <button class="prod-item-btn __reset">
               <Heart />
             </button>
-            <Image class="prod-item-img" src={img1} alt="produto" />
+            <Image class="prod-item-img" src={imgProd1} alt="produto" />
           </div>
         </div>
   
@@ -229,10 +235,7 @@ import Transfer from '../components/icone/transfer.astro';
             </p>
           </div>
           
-      </div >
-    
-      </div>
-      
+      </div >  
       <div class="info-transfer-mob">
         <div class="transfer">
           <Transfer />
@@ -248,32 +251,122 @@ import Transfer from '../components/icone/transfer.astro';
       </div>
     </div>
 
-    <!-- <div>
-      <p>Produtos que você também pode gostar</p>
-      <div>
-        <Image src={img4} alt="produto" width="263" height="340" />
-        <span>Novo!</span>
-        <p>Blazer Off white</p>
-        <p>R$ 140,70</p>
-        <div>
-          <Image src={img5} alt="produto" width="263" height="340" />
-          <span>Novo!</span>
-          <p>Jaqueta Couro Sintetico</p>
-          <p>R$ 140,70</p>
-        </div>
-        <div>
-          <Image src={img6} alt="produto" width="263" height="340" />
-          <span>25% off</span>
-          <p>Calça Wide Leg Destroyed</p>
-          <p>R$ 140,70</p>
-        </div>
-        <div>
-          <Image src={img7} alt="produto" width="263" height="340" />
-          <span>Novo!</span>
-          <p>Camisa Jeans com Bolsos</p>
-          <p>R$ 140,70</p>
-        </div>
+    <div class="slides">
+      <div class="slides-head">
+        <h3 >Produtos que você também pode gostar</h3>
       </div>
-    </div> -->
+      <div class="slides-body">  
+        <button class="slides-btn-nav __reset js-prev">
+          <Left />
+        </button>
+        <div class="slides-img-container container">
+          <div class="slides-item">
+            <Image class="slides-img"
+              src={imgSlide1}
+              alt="produto"/>
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Blazer Off white</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide2} alt="produto" />
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Jaqueta Couro Sintetico</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide3} alt="produto" />
+            <span class="slides-img-tag __desc">25% off</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Calça Wide Leg Destroyed</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide4} alt="produto" />
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Camisa Jeans com Bolsos</p>
+            <p>
+              <small>
+                R$ 110,40
+              </small>
+              <strong>
+                R$ 93,84
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+        </div>
+        <button class="slides-btn-nav __reset js-next">
+          <Right />
+        </button>
+      </div>
+    </div>
   </main>
 </Layout>
