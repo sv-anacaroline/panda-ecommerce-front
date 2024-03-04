@@ -12,13 +12,14 @@ import imgSlide4 from "../assets/img/slide/4.jpeg";
 
 
 import Layout from "../layouts/Layout.astro";
-import Right from "../components/icone/right.astro";
-import Heart from '../components/icone/heart.astro';
-import Star from '../components/icone/star.astro';
-import Cart from '../components/icone/shopping-cart.astro'
-import Down from '../components/icone/down.astro'
-import Transfer from '../components/icone/transfer.astro';
-import Left from "../components/icone/left.astro";
+import Right from "../components/icon/right.astro";
+import Heart from '../components/icon/heart.astro';
+import Star from '../components/icon/star.astro';
+import Cart from '../components/icon/shopping-cart.astro'
+import Down from '../components/icon/down.astro'
+import Transfer from '../components/icon/transfer.astro';
+import Left from "../components/icon/left.astro";
+import Close from '../components/icon/close.astro';
 ---
 
 <Layout title="Teste Panda">
@@ -135,78 +136,80 @@ import Left from "../components/icone/left.astro";
           <div class="calculator-shipping">
             <span class="calculator-label">Calcule o prazo e o valor da entrega</span>
             <div class="calculator">
-              <input class= "calculator-input" type="text" placeholder="00000-000" />
-              <button class="calculator-btn">Calcular</button>
+              <input class= "calculator-input" type="text" placeholder="00000-000" id="ship-calc-input"/>
+              <button class="calculator-btn" id="ship-calc-btn">Calcular</button>
             </div>
           </div>
-          <div class="prod-detail-mob">
-            <div class="title-detail">
-              <span class="title">Detalhes do Produto</span>
-              <button class="btn-detail"><Down /></button>
+          <div class="prod-tabs">
+            <div class="prod-detail-mob">
+              <div class="title-detail">
+                <span class="title">Detalhes do Produto</span>
+                <button class="btn-detail" id="btn-prod-detail-1"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-1">
+                <p class="text-info">
+                  O nosso modelo de vestido Intense com certeza é a tendência do
+                  momento! Com um corte justo no corpo, ele realça suas curvas de forma
+                  leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+                  incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+                  conforto excepcional. O design sem estampa adiciona um toque
+                  minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+                  Seja para um encontro descontraído ou uma tarde entre amigos, este
+                  vestido é a escolha certa para um estilo sensual e sofisticado ao
+                  mesmo tempo.
+                </p>
+              </div>
             </div>
-            <div class="title-detail-content">
-              <p class="text-info">
-                O nosso modelo de vestido Intense com certeza é a tendência do
-                momento! Com um corte justo no corpo, ele realça suas curvas de forma
-                leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
-                incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
-                conforto excepcional. O design sem estampa adiciona um toque
-                minimalista e versátil ao seu look, perfeito para ocasiões casuais.
-                Seja para um encontro descontraído ou uma tarde entre amigos, este
-                vestido é a escolha certa para um estilo sensual e sofisticado ao
-                mesmo tempo.
-              </p>
+            <div class="prod-trent-mob">
+              <div class="title-detail">
+                <span class="title">Caracteristicas do Produto</span>
+                <button class="btn-detail"  id="btn-prod-detail-2"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-2">
+                <p class="text-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                  nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                  consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                  velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                  Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="prod-trent-mob">
-            <div class="title-detail">
-              <span class="title">Caracteristicas do Produto</span>
-              <button class="btn-detail"><Down /></button>
+            <div class="payment">
+              <div class="title-detail">
+                <span class="title">Formas de Pagamento</span>
+                <button class="btn-detail"  id="btn-prod-detail-3"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-3">
+                <ul class="pay-list">
+                  <li>Pix</li>
+                  <li>Boleto</li>
+                  <li>Cartao de Credito</li>
+                </ul>
+              </div>
             </div>
-            <div class="title-detail-content">
-              <p class="text-info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-                nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
-                consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
-                velit dignissim sodales ut eu sem. Et tortor consequat id porta.
-                Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
-              </p>
-            </div>
-          </div>
-          <div class="payment">
-            <div class="title-detail">
-              <span class="title">Formas de Pagamento</span>
-              <button class="btn-detail"><Down /></button>
-            </div>
-            <div class="title-detail-content">
-              <ul class="pay-list">
-                <li>Pix</li>
-                <li>Boleto</li>
-                <li>Cartao de Credito</li>
-              </ul>
-            </div>
-          </div>
-          <div class="return">
-            <div class="title-detail">
-              <span class="title">Trocas e Devolucao</span>
-              <button class="btn-detail"><Down /></button>
-            </div>
-            <div class="title-detail-content">
-              <p class="text-info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
-                nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
-                consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
-                velit dignissim sodales ut eu sem. Et tortor consequat id porta.
-                Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
-              </p>
+            <div class="return">
+              <div class="title-detail">
+                <span class="title">Trocas e Devolucao</span>
+                <button class="btn-detail"  id="btn-prod-detail-4"><Down /></button>
+              </div>
+              <div class="prod-detail-content"  id="target-prod-detail-4">
+                <p class="text-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                  nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                  consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                  velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                  Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="prod-info-desk">
-        <d class="prod-info-head">
+        <div class="prod-info-head">
           <a class="prod-info-link __active" id="prod-nav-details"><h2>Descricao do produto</h2></a>
           <a class="prod-info-link" id="prod-nav-trent"><h2>Caracteristicas do Produto</h2></a>
         </div>
@@ -366,6 +369,17 @@ import Left from "../components/icone/left.astro";
         <button class="slides-btn-nav __reset js-next">
           <Right />
         </button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-background">
+        <div class="modal-dialog">
+          <button class="modal-close" id="modal-btn ">
+            <Close />
+          </button>
+          <p>o custo do calculo do frente do CEP: <span id="modal-cep"></span> é R$ <span id="modal-value"></span> </p>
+        </div>
       </div>
     </div>
   </main>
