@@ -1,1 +1,3 @@
-console.log("oi")
+import './accordion'
+import './tabs'
+import './modal'

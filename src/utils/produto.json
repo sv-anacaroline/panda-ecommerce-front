@@ -1,0 +1,60 @@
+{
+    "nome" : "Vestido Intense Manga Longa",
+    "Ref": "00000000",
+    "cores":[
+        {
+            "value": "#014188",
+            "label": "azul"
+        },
+        { 
+            "value": "#9B4D04",
+            "label": "marrom"
+        },
+        {
+            "value": "#811BBF",
+            "label": "roxo"}
+    ],
+    "tamanhoPeca": [
+        {
+            "value": "PP",
+            "label": "PP"
+        },
+        { 
+            "value": "P",
+            "label": "P"
+        },
+        {
+            "value": "M",
+            "label": "M"
+        },
+        {
+            "value": "G",
+            "label": "G"
+        },
+        { 
+           "value": "GG",
+           "label": "GG"
+        }
+    ],
+    "imagens":[
+        {
+            "value": "assets/img/img_01.jpeg",
+            "label": "img_01"
+        },
+        { 
+            "value": "assets/img/img_02.jpeg",
+            "label": "img_02"
+        },
+        {
+            "value": "assets/img/img_03.jpeg",
+            "label": "img_03"
+        }
+    ],
+    "quantidadeEstoque" :2,
+    "desconto": 10,
+    "valorAnterior" : 97.20,
+    "formasDePagamento": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.",
+    "trocas" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.",
+    "detalhes": "O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.",
+    "caracteristicas": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet."
+}

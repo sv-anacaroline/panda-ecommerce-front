@@ -1,8 +1,390 @@
-<main class="pagina"> MInha pagina </main>
-<style>
-	@import url('../style.css');
-</style>
+---
+import { Image } from "astro:assets";
 
-<script>
-	import "../utils"
-</script>
+import imgProd1 from "../assets/img/prod/1.jpeg";
+import imgProd2 from "../assets/img/prod/2.jpeg";
+import imgProd3 from "../assets/img/prod/3.jpeg";
+
+import imgSlide1 from "../assets/img/slide/1.jpeg";
+import imgSlide2 from "../assets/img/slide/2.jpeg";
+import imgSlide3 from "../assets/img/slide/3.jpeg";
+import imgSlide4 from "../assets/img/slide/4.jpeg";
+
+
+import Layout from "../layouts/Layout.astro";
+import Right from "../components/icon/right.astro";
+import Heart from '../components/icon/heart.astro';
+import Star from '../components/icon/star.astro';
+import Cart from '../components/icon/shopping-cart.astro'
+import Down from '../components/icon/down.astro'
+import Transfer from '../components/icon/transfer.astro';
+import Left from "../components/icon/left.astro";
+import Close from '../components/icon/close.astro';
+---
+
+<Layout title="Teste Panda">
+  <div class="container">
+    <nav class="navbar">
+      <div class="breadcrumb">
+        <a class="breadcrumb-item" href="”#”">Início</a>
+        <svg class="breadcrumb-icon">
+          <Right />
+        </svg>
+  
+        <a class="breadcrumb-item" href="”#”">Feminino</a>
+        <svg class="breadcrumb-icon">
+          <Right />  
+        </svg>
+  
+        <a class="breadcrumb-item" href="”#”">Vestidos</a>
+        <svg class="breadcrumb-icon">
+          <Right />  
+        </svg>
+  
+        <a class="breadcrumb-item __active" href="”#”">Ver Detalhes</a>
+      </div>
+    </nav>
+  </div>
+  <main class="page">
+    <div class="container">
+      <div class="product-details">
+        <div class="product-images">
+          <div class="thumbs">
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb __active"
+                src={imgProd1}
+                alt="produto"
+              />
+            </button>
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb"
+                src={imgProd2}
+                alt="produto"
+              />
+            </button>
+            <button class="thumb-btn __reset">
+              <Image
+                class="thumb"
+                src={imgProd3}
+                alt="produto"
+              />
+            </button>
+          </div>
+          <div class="prod-item">
+            <button class="prod-item-btn __reset">
+              <Heart />
+            </button>
+            <Image class="prod-item-img" src={imgProd1} alt="produto" />
+          </div>
+        </div>
+  
+        <div class="product-info">
+          <h1 class="title-prod">Vestido Intense Manga Longa</h1>
+          <p class="reference">Ref: 0000000</p>
+          <div class="assessment-box">
+            <div class="star-rate">
+              <Star/>            
+              <Star/>            
+              <Star/>            
+              <Star/>            
+              <Star className="__limit"/>           
+            </div>
+              <a class="assessment">Ver avaliaçoes</a>
+          </div>  
+          <div class="color-box">
+            <p>Selecione a cor</p>
+            <div class="option-color">
+              <button class="color-btn __color-one"></button>
+              <button class="color-btn __color-two"></button>
+              <button class="color-btn __color-three" ></button>
+            </div>
+          </div>
+          <div class="size-box">
+            <p>Selecione o tamanho</p>
+          <div class="size">
+              <button class="size-btn">PP</button>
+              <button class="size-btn">P</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">G</button>
+              <button class="size-btn">GG</button>
+          </div>
+            <a class="table-size">Ver tabela de tamanhos</a>
+          </div>
+          <div class="stock-notice">
+            <p class="notice">Últimos 2 produtos em estoque. Não perca esta chance!</p>
+          </div>
+          <div class="info-value">
+            <div class="discount">
+              <span class="percent-discount">10% off</span>
+            </div>
+            <div class="value">
+              <span class="off-discount">R$ 97,20</span>
+              <span class="on-discount">R$ 87,48</span>
+            </div>
+            <span class="info-pay">Parcelados em até 4x sem juros no cartão</span>
+          </div>
+          <div class="cart">
+            <button class="cart-btn">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+          </div>
+          <div class="calculator-shipping">
+            <span class="calculator-label">Calcule o prazo e o valor da entrega</span>
+            <div class="calculator">
+              <input class= "calculator-input" type="text" placeholder="00000-000" id="ship-calc-input"/>
+              <button class="calculator-btn" id="ship-calc-btn">Calcular</button>
+            </div>
+          </div>
+          <div class="prod-tabs">
+            <div class="prod-detail-mob">
+              <div class="title-detail">
+                <span class="title">Detalhes do Produto</span>
+                <button class="btn-detail" id="btn-prod-detail-1"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-1">
+                <p class="text-info">
+                  O nosso modelo de vestido Intense com certeza é a tendência do
+                  momento! Com um corte justo no corpo, ele realça suas curvas de forma
+                  leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+                  incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+                  conforto excepcional. O design sem estampa adiciona um toque
+                  minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+                  Seja para um encontro descontraído ou uma tarde entre amigos, este
+                  vestido é a escolha certa para um estilo sensual e sofisticado ao
+                  mesmo tempo.
+                </p>
+              </div>
+            </div>
+            <div class="prod-trent-mob">
+              <div class="title-detail">
+                <span class="title">Caracteristicas do Produto</span>
+                <button class="btn-detail"  id="btn-prod-detail-2"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-2">
+                <p class="text-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                  nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                  consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                  velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                  Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+                </p>
+              </div>
+            </div>
+            <div class="payment">
+              <div class="title-detail">
+                <span class="title">Formas de Pagamento</span>
+                <button class="btn-detail"  id="btn-prod-detail-3"><Down /></button>
+              </div>
+              <div class="prod-detail-content" id="target-prod-detail-3">
+                <ul class="pay-list">
+                  <li>Pix</li>
+                  <li>Boleto</li>
+                  <li>Cartao de Credito</li>
+                </ul>
+              </div>
+            </div>
+            <div class="return">
+              <div class="title-detail">
+                <span class="title">Trocas e Devolucao</span>
+                <button class="btn-detail"  id="btn-prod-detail-4"><Down /></button>
+              </div>
+              <div class="prod-detail-content"  id="target-prod-detail-4">
+                <p class="text-info">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+                  nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+                  consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+                  velit dignissim sodales ut eu sem. Et tortor consequat id porta.
+                  Nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prod-info-desk">
+        <div class="prod-info-head">
+          <a class="prod-info-link __active" id="prod-nav-details"><h2>Descricao do produto</h2></a>
+          <a class="prod-info-link" id="prod-nav-trent"><h2>Caracteristicas do Produto</h2></a>
+        </div>
+        <div class="prod-info-body">
+          <div id="prod-content-details" class="prod-info-desk-content">
+            <p>
+              O nosso modelo de vestido Intense com certeza é a tendência do
+              momento! Com um corte justo no corpo, ele realça suas curvas de forma
+              leve e sensual. Feito com uma combinação de tecidos de alta qualidade,
+              incluindo lycra, poliéster e algodão, o vestido Intense proporciona um
+              conforto excepcional. O design sem estampa adiciona um toque
+              minimalista e versátil ao seu look, perfeito para ocasiões casuais.
+              Seja para um encontro descontraído ou uma tarde entre amigos, este
+              vestido é a escolha certa para um estilo sensual e sofisticado ao
+              mesmo tempo.
+            </p>
+          </div>
+          <div id="prod-content-trent" class="prod-info-desk-content __inactive">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam
+              nulla facilisi cras fermentum odio eu feugiat pretium. Nibh ipsum
+              consequat nisl vel pretium lectus quam id. Curabitur vitae nunc sed
+              velit dignissim sodales ut eu sem. Et tortor consequat id porta. Nunc
+              mi ipsum faucibus vitae aliquet nec ullamcorper sit amet.
+            </p>
+          </div>
+          
+      </div >  
+      <div class="info-transfer-mob">
+        <div class="transfer">
+          <Transfer />
+        </div>
+        <div class="info-transfer">
+          <p class="title-transfer">
+            Entrega Rápida
+          </p>
+          <p class="subtitle-transfer">
+            Enviamos para todo Brasil
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slides">
+      <div class="slides-head">
+        <h3 >Produtos que você também pode gostar</h3>
+      </div>
+      <div class="slides-body">  
+        <button class="slides-btn-nav __reset js-prev">
+          <Left />
+        </button>
+        <div class="slides-img-container container">
+          <div class="slides-item">
+            <Image class="slides-img"
+              src={imgSlide1}
+              alt="produto"/>
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Blazer Off white</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide2} alt="produto" />
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Jaqueta Couro Sintetico</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide3} alt="produto" />
+            <span class="slides-img-tag __desc">25% off</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Calça Wide Leg Destroyed</p>
+            <p>
+              <small>
+                R$ 158,00
+              </small>
+              <strong>
+                R$ 140,70
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+          <div class="slides-item">
+            <Image class="slides-img" src={imgSlide4} alt="produto" />
+            <span class="slides-img-tag">Novo!</span>
+            <button class="slides-img-btn __reset">
+              <Heart />
+            </button>
+            <p>Camisa Jeans com Bolsos</p>
+            <p>
+              <small>
+                R$ 110,40
+              </small>
+              <strong>
+                R$ 93,84
+              </strong>
+            </p>
+            <button class="cart-btn __small">
+              <Cart />
+              <span>
+                Adicionar ao carrinho
+              </span>
+            </button>
+            <button class="cart-btn  __small __twin">
+              ver produto
+            </button>
+          </div>
+        </div>
+        <button class="slides-btn-nav __reset js-next">
+          <Right />
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-background">
+        <div class="modal-dialog">
+          <button class="modal-close __reset" id="modal-btn">
+            <Close />
+          </button>
+          <p>
+            o custo do calculo do frente do CEP:
+            <span>0000-000</span>
+            é R$ <span>32,49</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
